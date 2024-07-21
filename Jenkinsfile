@@ -19,7 +19,7 @@ pipeline {
     }
     post {
         always {
-            node {
+            node('your-node-label') {
                 junit 'logs/unitreport.xml'
             }
         }
